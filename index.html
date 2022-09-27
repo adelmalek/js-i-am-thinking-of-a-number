@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>'I am thinking of a number' Game</title>
+</head>
+<body>
+    <section id="main">
+
+        <div class="screen start">
+            <div class="message">
+                <h2>I am thinking of a number between</h2>
+                <h2><span>A</span> and <span>B</span></h2>
+            </div>
+
+            <div class="guess">
+                <h3>Can you guess?</h3>
+                <button>Start!</button>
+            </div>
+        </div>
+
+        <div class="screen game hidden">
+            <div class="message">
+                <h2>The number is <span>greater</span> than your tip.</h2>
+            </div>
+
+            <div class="guess">
+                <h3>Chances left: 4</h3>
+                <form action="">
+                    <label>
+                        Enter a number
+                        <input type="number" />
+                    </label>
+                </form>
+                <button>Send</button>
+            </div>
+        </div>
+
+        <div class="screen end hidden">
+            <div class="message">
+                <h2>The game is over.</h2>
+                <h2>You <span>win</span>.</h2>
+            </div>
+
+            <div class="guess">
+                <h3>Play again?</h3>
+                <button>New Game</button>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
