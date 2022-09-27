@@ -10,7 +10,7 @@
 <body>
     <section id="main">
 
-        <div class="screen start">
+        <div class="screen start js-start">
             <div class="message">
                 <h2>I am thinking of a number between</h2>
                 <h2><span></span></h2>
@@ -22,24 +22,24 @@
             </div>
         </div>
 
-        <div class="screen game hidden">
-            <div class="message">
-                <h2>The number is <span>greater</span> than your tip.</h2>
+        <div class="screen game hidden js-game">
+            <div class="message hidden js-message">
+                <h2>The number is <span class="game-text js-game-text"></span> than your tip.</h2>
             </div>
 
             <div class="guess">
-                <h3>Chances left: 4</h3>
+                <h3 class="js-chances-text"></h3>
                 <form action="">
                     <label>
                         Enter a number
-                        <input type="number" />
+                        <input type="number" id="game-input"/>
                     </label>
                 </form>
                 <button>Send</button>
             </div>
         </div>
 
-        <div class="screen end hidden">
+        <div class="screen end hidden js-end">
             <div class="message">
                 <h2>The game is over.</h2>
                 <h2>You <span>win</span>.</h2>
