@@ -24,25 +24,25 @@
 
         <div class="screen game hidden js-game">
             <div class="message hidden js-message">
-                <h2>The number is <span class="game-text js-game-text"></span> than your tip.</h2>
+                <h2 class="js-game-message">The number is <span class="game-text js-game-text"></span> than your tip.</h2>
             </div>
 
             <div class="guess">
                 <h3 class="js-chances-text"></h3>
-                <form action="">
+                <form action="" class="game-form" id="game-form">
                     <label>
                         Enter a number
                         <input type="number" id="game-input"/>
                     </label>
+                    <button>Send</button>
                 </form>
-                <button>Send</button>
             </div>
         </div>
 
         <div class="screen end hidden js-end">
             <div class="message">
                 <h2>The game is over.</h2>
-                <h2>You <span>win</span>.</h2>
+                <h2 class="js-end-text"></h2>
             </div>
 
             <div class="guess">
